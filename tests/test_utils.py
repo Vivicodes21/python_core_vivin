@@ -1,3 +1,4 @@
+# python
 import sys
 import pathlib
 
@@ -6,7 +7,8 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "src"))
 
 import unittest
 
-from python_core_vivin import add
+# noinspection PyUnresolvedReferences
+from python_core_vivin import add  # type: ignore[import]
 
 
 class TestUtils(unittest.TestCase):
